@@ -10,24 +10,51 @@ body {
     font-size: 1em;
 }
 
-/* Header */
-.logo
+a
 {
-
-}
-
-.menu-list
-{
-
+    outline: none;
+    text-decoration: none;
+    color: #000000;
 }
 
 .menu-item
 {
+   margin-left: 3.1em;
+}
 
+.blue-button
+{
+    font-family: "Montserrat";
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    background-color: #7AE5FD;
+    padding: 1.15em 1.94em;
+    border-radius: 4.8rem;
+    margin-left: 1.3em;
+}
+
+/* Header */
+.header-list
+{
+    display: flex;
+    align-items: center;
+    padding: 2.2em 3.94em;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;    
+    right: 0;
+    z-index: 3;
+}
+
+.menu-list
+{
+    display: flex;
+    align-items: center;
 }
 
 /* First screen */
-
 .first-screen
 {
     background-image: url('./assests/images/background-screen2.png');
@@ -35,11 +62,22 @@ body {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.first-screen-container
+{
+    width: 50%;
+    padding: 6.56rem;
 }
 
 .main-title
 {
     text-transform: uppercase;
+    color: #FFFFFF;
     font-size: 4.06em;
     font-weight: 800;
 }
@@ -47,33 +85,263 @@ body {
 .main-decription
 {
     font-weight: 400;
+    font-size: 1.25em;
+    margin-top: 1.0234375em;
+}
+
+.white-button
+{
+    background-color: #FFFFFF;
+    border: 0px solid #FFFFFF;
+    margin: 1.3125em 0em;
+    width: 16.5em;
+    height: 3.6875em;   
 }
 
 /* Description-screen */
+.description-title
+{
+    margin: 10em 4.4375em;
+}
 
 .desc-title
 {
     font-size: 3.75em;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .desc-paragraph
 {
     font-size: 1.6875em;
+    text-transform: none;
 }
 
 .desc-alt
 {
     font-size: 1.25em;
+    text-transform: none;
     color: #73A6B1;
+}
+
+.description-screen
+{
+    padding: 5vw;
+}
+
+/* Descriptions screen */
+.desc-card
+{
+    padding: 2em 3.875em;
+}
+
+.description-block
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #F1FDFF;
+    padding: 2vh 3vw;
+    border-radius: 0.625em;
+}
+
+.flex-block
+{
+    padding: 0em 4.4375em 10em;
 }
 
 .desc-header
 {
     font-size: 2.875em;
+    text-transform: uppercase;
 }
 
 .desc-text
 {
-    font-size: 1.25em;
+    padding-top: 0.625em;
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+.button-box
+{
+    display: flex;
+    justify-content: center;
+    padding: 1.3125em 2.1875em 12em;
+}
+
+.button-box .blue-button
+{
+    border: 0px solid #FFFFFF;
+}
+
+/* Childrend hold hands */
+.children-hold
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh 3vw;
+}
+
+.kids-text
+{
+    font-size: 1.7em;
+    padding-left: 5.4375em;
+}
+
+.wrapper
+{
+    position: relative;
+}
+
+.kids-hold-hand
+{
+    position: relative;
+    left: 30em;
+    top: -10em;
+    z-index: 2;
+}
+
+.kids-background-img
+{
+    position: absolute;
+    width: 150%;
+    left: 22em;
+    top: 0;
+    z-index: 1;
+}
+
+/* Help sceen */
+.help-screen
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0em 4.4375em 10em;
+}
+
+.desc-title
+{
+    margin: 0.9375rem;
+}
+
+.desc-paragraph
+{
+    margin-top: 1.5em;
+    margin-bottom: 1.0625rem;
+}
+
+.desc-title
+{
+    margin-bottom: 1.2rem;
+}
+
+/* Contact screen */
+.contacts-screen
+{
+    margin-top: 3.125em;
+    background-color: #F9FADF;
+    padding: 3.125em 4.4375em 10em;
+}
+
+.contacts-screen .desc-title
+{
+    display: inline;
+    padding: 0em 10rem;
+    margin-right: 13rem;
+}
+
+.contacts-number
+{
+    display: inline-block;
+    padding: 3.125em 4.4375em 0em;
+}
+
+.contacts-number .main-decription
+{
+    margin-top: 0.5625em;
+    padding-bottom: 3.5625em;
+}
+
+.main-decription
+{
+    margin-top: 0.3125em;
+}
+
+.nav-phone {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-images
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contacts-input {
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    background-color: #F9FADF;
+    width: 5.907rem;
+    height: 1.2568rem;
+    padding: 1.31rem 25rem 1.31rem 2.6875rem;
+    border-radius: 3.8125rem;
+    margin-top: 1.29166667rem;
+    border: 0px solid #FFFFFF;
+}
+
+.contacts-email-screen
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-email
+{
+    display: flex;
+    width: 81.125em;
+    height: 32.0625em;
+    background-color: #FFFFFF;
+    border-radius: 0.625em;
+    padding: 3.75em;
+}
+
+.contacts-email-input
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+.contacts-email img
+{
+    width: 33.8125rem;
+    height: 21.75rem;
+}
+
+.contacts-email-input .blue-button
+{
+    border: 0px solid #FFFFFF;
+    margin-top: 1.29166667rem;
+    width: 33.8125rem;
+    margin-left: 0em;
+}
+
+@media screen and (max-width: 600px)
+{
+    .description-block
+    {
+        flex-direction: column;
+    }
+    .children-hold
+    {
+        flex-direction: column;
+    }
 }
