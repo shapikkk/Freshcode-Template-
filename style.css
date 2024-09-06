@@ -29,7 +29,7 @@ a
     text-transform: uppercase;
     background-color: #7AE5FD;
     padding: 1.15em 1.94em;
-    border-radius: 4.8rem;
+    border-radius: 87px;
     margin-left: 1.3em;
 }
 
@@ -45,7 +45,7 @@ a
     top: 0;
     left: 0;    
     right: 0;
-    z-index: 3;
+    z-index: 10;
 }
 
 .menu-list
@@ -80,6 +80,7 @@ a
     color: #FFFFFF;
     font-size: 4.06em;
     font-weight: 800;
+    line-height: 3.740625rem;
 }
 
 .main-decription
@@ -87,6 +88,7 @@ a
     font-weight: 400;
     font-size: 1.25em;
     margin-top: 1.0234375em;
+    line-height: 1.5rem;
 }
 
 .white-button
@@ -111,23 +113,27 @@ a
     display: flex;
     justify-content: center;
     text-align: center;
+    line-height: 4.5rem;
 }
 
 .desc-paragraph
 {
     font-size: 1.6875em;
     text-transform: none;
+    line-height: 2.025em;
 }
 
 .desc-alt
 {
     font-size: 1.25em;
+    line-height: 0em;
     text-transform: none;
     color: #73A6B1;
 }
 
 .description-screen
 {
+    margin-bottom: 8em;
     padding: 5vw;
 }
 
@@ -143,12 +149,15 @@ a
     flex-direction: row;
     background-color: #F1FDFF;
     padding: 2vh 3vw;
-    border-radius: 0.625em;
+    border-radius: 10px;
 }
 
 .flex-block
 {
-    padding: 0em 4.4375em 10em;
+    padding: 0em 4.4375em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .desc-header
@@ -176,19 +185,32 @@ a
     border: 0px solid #FFFFFF;
 }
 
+.flex-block .desc-header
+{
+    line-height: 3.45rem;
+}
+
+.flex-block .desc-text
+{
+    line-height: 1.5rem;
+}
+
 /* Childrend hold hands */
 .children-hold
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     padding: 2vh 3vw;
 }
 
 .kids-text
 {
+    position: relative;
+    width: 40em;
     font-size: 1.7em;
-    padding-left: 5.4375em;
+    padding-left: 3.4375em;
+    line-height: 2.045625rem;
 }
 
 .wrapper
@@ -200,8 +222,8 @@ a
 {
     position: relative;
     left: 30em;
-    top: -10em;
-    z-index: 2;
+    top: -16em;
+    z-index: 3;
 }
 
 .kids-background-img
@@ -209,8 +231,18 @@ a
     position: absolute;
     width: 150%;
     left: 22em;
-    top: 0;
-    z-index: 1;
+    top: -6.15em;
+    z-index: 2;
+}
+
+.kids-text-block
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 92.425rem;
+    height: 19.5em;
+    background-color: #F1FDFF;
 }
 
 /* Help sceen */
@@ -220,7 +252,7 @@ a
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0em 4.4375em 10em;
+    padding: 0em 4.4375em;
 }
 
 .desc-title
@@ -228,7 +260,7 @@ a
     margin: 0.9375rem;
 }
 
-.desc-paragraph
+.help-screen .desc-paragraph
 {
     margin-top: 1.5em;
     margin-bottom: 1.0625rem;
@@ -242,7 +274,7 @@ a
 /* Contact screen */
 .contacts-screen
 {
-    margin-top: 3.125em;
+    margin-top: 1.125em;
     background-color: #F9FADF;
     padding: 3.125em 4.4375em 10em;
 }
@@ -266,9 +298,18 @@ a
     padding-bottom: 3.5625em;
 }
 
-.main-decription
+.main-decription-number
 {
-    margin-top: 0.3125em;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.main-decription-number::after {
+    content: '0-987-654-321';
+    font-weight: bold;
+    display: flex;
+    margin-top: 0.5625em;
+    padding-bottom: 3.5625em;
 }
 
 .nav-phone {
@@ -292,7 +333,7 @@ a
     width: 5.907rem;
     height: 1.2568rem;
     padding: 1.31rem 25rem 1.31rem 2.6875rem;
-    border-radius: 3.8125rem;
+    border-radius: 61px;
     margin-top: 1.29166667rem;
     border: 0px solid #FFFFFF;
 }
@@ -309,7 +350,7 @@ a
     width: 81.125em;
     height: 32.0625em;
     background-color: #FFFFFF;
-    border-radius: 0.625em;
+    border-radius: 10px;
     padding: 3.75em;
 }
 
@@ -324,6 +365,11 @@ a
 {
     width: 33.8125rem;
     height: 21.75rem;
+}
+
+.contacts-email .desc-paragraph
+{
+    line-height: 2.025rem;
 }
 
 .contacts-email-input .blue-button
