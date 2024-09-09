@@ -304,11 +304,10 @@ a
     line-height: 1.5rem;
 }
 
-.main-decription-number::after {
-    content: '0-987-654-321';
+.font-number
+{
     font-weight: bold;
     display: flex;
-    margin-top: 0.5625em;
     padding-bottom: 3.5625em;
 }
 
